@@ -34,7 +34,7 @@ from sklearn import model_selection,preprocessing
 import warnings
 warnings.filterwarnings('ignore')
 
-d =pd.read_csv(r'C:\Users\vinod\Desktop\Data\chamcha.csv',names=['Status','message'],encoding='latin-1')   #opening csv dataset into 'd' and just naming our columns,encoding needed for textual data(not necessary):
+d =pd.read_csv(r'C:\Users\vinod\Desktop\Data\chamcham.csv',names=['Status','message'],encoding='latin-1')   #opening csv dataset into 'd' and just naming our columns,encoding needed for textual data(not necessary):
 X=d["message"]
 y=d["Status"]
 le=preprocessing.LabelEncoder()         #just a labeling for malicious and non-maliciousApi calls (column 1) as either 0 and 1 (if not done in dataset)
